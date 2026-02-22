@@ -34,11 +34,11 @@
             </div>
             <div id="card2" class="bg-base-100 p-5 rounded-2xl space-y-2">
                 <p class="text-[14px] font-medium ">Interview</p>
-                <h3 class="font-bold text-2xl text-green-500">0</h3>
+                <h3 id="interview-total" class="font-bold text-2xl text-green-500">0</h3>
             </div>
             <div id="card3" class="bg-base-100 p-5 rounded-2xl space-y-2">
                 <p class="text-[14px] font-medium">Rejected</p>
-                <h3 class="font-bold text-2xl text-red-500">0</h3>
+                <h3 id="rejected-total" class="font-bold text-2xl text-red-500">0</h3>
             </div>
         </div>
 
@@ -60,7 +60,7 @@
             </div>
         </div>
     </section>
-    <main class="w-[90%] sm:w-[80%] md:w-[70%] mx-auto ">
+    <main id="main" class="w-[90%] sm:w-[80%] md:w-[70%] mx-auto ">
 
         <section id="card-container" class="space-y-5">
             <div class="card p-6 space-y-5 bg-base-100 rounded-2xl  hover:shadow-2xl transition duration-300">
@@ -79,19 +79,20 @@
                 </div>
 
                 <div class="text-gray-500 flex flex-col  sm:flex-row gap-2 sm:gap-0">
-                    <span class=" type-salary">Remote • Full-time</span>
-                    <span> • $130,000 - $175,000</span>
+                    <span class=" type">Remote • Full-time</span>
+                    <span class="salary"> • $130,000 - $175,000</span>
 
                 </div>
                 <div class="grid gap-2">
-                    <span class="bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
+                    <span
+                        class="present-status  bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
                         Applied</span>
                     <p class="description text-gray-500">Build cross-platform mobile applications using React Native.
                         Work on products
                         used by millions of users worldwide.</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-4 sm:gap-2">
-                    <button 
+                    <button
                         class=" btn uppercase px-4 py-2 text-green-500 border-green-500 rounded hover:bg-green-500 hover:text-base-100">interview</button>
                     <button
                         class="btn uppercase px-4 py-2 bg-base-100 text-red-500 border-red-500 rounded hover:bg-red-500 hover:text-base-100">Rejected</button>
@@ -113,12 +114,13 @@
                 </div>
 
                 <div class="text-gray-500 flex flex-col  sm:flex-row gap-2 sm:gap-0">
-                    <span class=" type-salary">Los Angeles, CA • Part-time</span>
-                    <span> • $80,000 - $120,000</span>
+                    <span class=" type">Los Angeles, CA • Part-time</span>
+                    <span class="salary"> • $80,000 - $120,000</span>
 
                 </div>
                 <div class="grid gap-2">
-                    <span class="bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
+                    <span
+                        class="present-status  bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
                         Applied</span>
                     <p class="description text-gray-500">Create stunning web experiences for high-profile clients. Must
                         have portfolio and experience with modern web design trends.</p>
@@ -146,12 +148,13 @@
                 </div>
 
                 <div class="text-gray-500 flex flex-col  sm:flex-row gap-2 sm:gap-0">
-                    <span class=" type-salary">Boston, MA • Full-time</span>
-                    <span> • $130,000 - $175,000</span>
+                    <span class=" type">Boston, MA • Full-time</span>
+                    <span class="salary"> • $130,000 - $175,000</span>
 
                 </div>
                 <div class="grid gap-2">
-                    <span class="bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
+                    <span
+                        class="present-status  bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
                         Applied</span>
                     <p class="description text-gray-500">Transform complex data into compelling visualizations. Required
                         skills: D3.js, React, and strong analytical thinking.</p>
@@ -179,13 +182,14 @@
                 </div>
 
                 <div class="text-gray-500 flex flex-col  sm:flex-row gap-2 sm:gap-0">
-                    <span class=" type-salary">Seattle, WA• Full-time
+                    <span class=" type">Seattle, WA• Full-time
                     </span>
-                    <span> • $140,000 - $190,000</span>
+                    <span class="salary"> • $140,000 - $190,000</span>
 
                 </div>
                 <div class="grid gap-2">
-                    <span class="bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
+                    <span
+                        class="present-status  bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
                         Applied</span>
                     <p class="description text-gray-500">Design and maintain scalable backend systems using Python and
                         AWS. Work with modern DevOps practices and cloud infrastructure.</p>
@@ -200,8 +204,8 @@
             <div class="card p-6 space-y-5 bg-base-100 rounded-2xl hover:shadow-2xl transition duration-300">
                 <div class="flex justify-between">
                     <div class="space-y-2">
-                        <p class="company-name text-[18px] font-semibold">Mobile First Corp</p>
-                        <p class="position text-gray-500">React Native Developer</p>
+                        <p class="company-name text-[18px] font-semibold">Innovation Labs</p>
+                        <p class="position text-gray-500">UI/UX Engineer</p>
                     </div>
                     <div>
                         <p
@@ -213,16 +217,21 @@
                 </div>
 
                 <div class="text-gray-500 flex flex-col  sm:flex-row gap-2 sm:gap-0">
-                    <span class=" type-salary">Remote • Full-time</span>
-                    <span> • $130,000 - $175,000</span>
+                    <span class=" type">Austin, TX
+                        •
+                        Full-time
+                    </span>
+                    <span class="salary">
+                        •
+                        $110,000 - $150,000</span>
 
                 </div>
                 <div class="grid gap-2">
-                    <span class="bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
+                    <span
+                        class="present-status  bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
                         Applied</span>
-                    <p class="description text-gray-500">Build cross-platform mobile applications using React Native.
-                        Work on products
-                        used by millions of users worldwide.</p>
+                    <p class="description text-gray-500">Create beautiful and functional user interfaces for our suite
+                        of products. Strong design skills and frontend development expertise required.</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-4 sm:gap-2">
                     <button
@@ -234,8 +243,8 @@
             <div class="card p-6 space-y-5 bg-base-100 rounded-2xl hover:shadow-2xl transition duration-300">
                 <div class="flex justify-between">
                     <div class="space-y-2">
-                        <p class="company-name text-[18px] font-semibold">Mobile First Corp</p>
-                        <p class="position text-gray-500">React Native Developer</p>
+                        <p class="company-name text-[18px] font-semibold">MegaCorp Solutions</p>
+                        <p class="position text-gray-500">JavaScript Developer</p>
                     </div>
                     <div>
                         <p
@@ -247,16 +256,21 @@
                 </div>
 
                 <div class="text-gray-500 flex flex-col  sm:flex-row gap-2 sm:gap-0">
-                    <span class=" type-salary">Remote • Full-time</span>
-                    <span> • $130,000 - $175,000</span>
+                    <span class=" type">New York, NY
+                        •
+                        Full-time
+                    </span>
+                    <span class="salary"> •
+                        $130,000 - $170,00</span>
 
                 </div>
                 <div class="grid gap-2">
-                    <span class="bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
+                    <span
+                        class="present-status bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
                         Applied</span>
-                    <p class="description text-gray-500">Build cross-platform mobile applications using React Native.
-                        Work on products
-                        used by millions of users worldwide.</p>
+                    <p class="description text-gray-500">Build enterprise applications with JavaScript and modern
+                        frameworks. We offer competitive compensation, health insurance, and professional development
+                        opportunities.</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-4 sm:gap-2">
                     <button
@@ -268,8 +282,8 @@
             <div class="card p-6 space-y-5 bg-base-100 rounded-2xl hover:shadow-2xl transition duration-300">
                 <div class="flex justify-between">
                     <div class="space-y-2">
-                        <p class="company-name text-[18px] font-semibold">Mobile First Corp</p>
-                        <p class="position text-gray-500">React Native Developer</p>
+                        <p class="company-name text-[18px] font-semibold">StartupXYZ</p>
+                        <p class="position text-gray-500">Full Stack Engineer</p>
                     </div>
                     <div>
                         <p
@@ -281,16 +295,17 @@
                 </div>
 
                 <div class="text-gray-500 flex flex-col  sm:flex-row gap-2 sm:gap-0">
-                    <span class=" type-salary">Remote • Full-time</span>
-                    <span> • $130,000 - $175,000</span>
+                    <span class=" type">Remote • Full-time</span>
+                    <span class="salary">•
+                        $120,000 - $160,000</span>
 
                 </div>
                 <div class="grid gap-2">
-                    <span class="bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
+                    <span
+                        class="present-status bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
                         Applied</span>
-                    <p class="description text-gray-500">Build cross-platform mobile applications using React Native.
-                        Work on products
-                        used by millions of users worldwide.</p>
+                    <p class="description text-gray-500">Join our fast-growing startup and work on our core platform.
+                        Experience with Node.js and React required. Great benefits and equity package included.</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-4 sm:gap-2">
                     <button
@@ -302,8 +317,8 @@
             <div class="card p-6 space-y-5 bg-base-100 rounded-2xl hover:shadow-2xl transition duration-300">
                 <div class="flex justify-between">
                     <div class="space-y-2">
-                        <p class="company-name text-[18px] font-semibold">Mobile First Corp</p>
-                        <p class="position text-gray-500">React Native Developer</p>
+                        <p class="company-name text-[18px] font-semibold">TechCorp Industries</p>
+                        <p class="position text-gray-500">Senior Frontend Developer</p>
                     </div>
                     <div>
                         <p
@@ -315,16 +330,19 @@
                 </div>
 
                 <div class="text-gray-500 flex flex-col  sm:flex-row gap-2 sm:gap-0">
-                    <span class=" type-salary">Remote • Full-time</span>
-                    <span> • $130,000 - $175,000</span>
+                    <span class=" type">San Francisco, CA
+                        •
+                        Full-time
+                    </span>
+                    <span class="salary"> •
+                        $130,000 - $175,000</span>
 
                 </div>
                 <div class="grid gap-2">
-                    <span class="bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
+                    <span
+                        class="present-status bg-[#EEF4FF] w-30 px-4 py-2 bg-base-100 border-none rounded drop-shadow-lg">Not
                         Applied</span>
-                    <p class="description text-gray-500">Build cross-platform mobile applications using React Native.
-                        Work on products
-                        used by millions of users worldwide.</p>
+                    <p class="description text-gray-500">We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-4 sm:gap-2">
                     <button

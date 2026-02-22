@@ -4,9 +4,9 @@ function removeColor(selector) {
 function addColor(selector) {
     selector.classList.add('bg-base-100', 'text-black/50');
 }
-// function addHidden(selector) {
-//     selector.classList.add('hidden');
-// }
-// function removeHidden(selector){
-//    selector.classList.remove('hidden');
-// }
+function addHidden(selector) {
+    selector.classList.add('hidden');
+}
+function removeHidden(selector){
+   selector.classList.remove('hidden');
+}
